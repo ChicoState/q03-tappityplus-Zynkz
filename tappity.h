@@ -8,12 +8,13 @@
 class tappity
 {
     private:
-
+        std::string phrase;
+        std::string userinput;
     public:
         //Constructor sets the reference phrase
         tappity(std::string reference);
 
-        //Provide the input to be compared to the reference. Before this 
+        //Provide the input to be compared to the reference. Before this
         //function is called, the input should be considered an empty string
         void entry(std::string input);
 
@@ -24,11 +25,11 @@ class tappity
 
         //Compares the content of the reference to that of the input and
         //calculates the accuracy of matching characters. If the two strings
-        //are identical, accuracy should be 100. However, for each 
+        //are identical, accuracy should be 100. However, for each
         //corresponding character that does not match in the same location,
         //the percentage of corresponding characters should be returned.
         //For example, if the reference and input have 10 letters and the input
-        //matches 8 of the corresponding reference characters, the function 
+        //matches 8 of the corresponding reference characters, the function
         //should return 80. When input does not have the same number of
         //characters as the reference, the accuracy should represent the percent
         //of matching characters between the shorter and longer strings. For
